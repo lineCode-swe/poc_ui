@@ -1,0 +1,142 @@
+/* Global styles to the web application. */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+header {
+    background: #2875d4;
+    padding: 0.1em 0;
+    width: 100%;
+    overflow: auto;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    padding: 0px 1em;
+    text-decoration: none;
+    font-size: 2em;
+    line-height: 35px;
+}
+
+#content {
+    width: 80%;
+    float: right;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#sidebar {
+    width: 15%;
+    float: left;
+    margin-top: 2em;
+    margin-left: 1.5em;
+    text-align: center;
+}
+
+#sidebar p {
+    margin-bottom: 1em;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3em;
+}
+
+/* #bottoni button {
+    width: 15em;
+    height: 2.5em;
+    margin: 0.5em;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: lightgray;
+} */
+
+#bottoni button {
+    width: 15em;
+    height: 2.5em;
+    margin: 0.5em;
+    border: 2px solid #2875d4;
+    border-radius: 3px;
+    color: #2875d4;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+#bottoni button:hover:enabled{
+    background: #2875d4;
+    color: white;
+}
+/* 44b7ff */
+#bottoni button:active:enabled{
+    background: #5faaf0;
+    color: white;
+}
+
+#bottoni button:disabled {
+    
+}
+
+#legenda li {
+    margin: 1em;
+}
+
+#legUnità {
+    background-color: lightgreen;
+    padding: 0.25em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+#legOstacolo {
+    background-color: lightcoral;
+    padding: 0.25em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+#legPOI {
+    background-color: lightblue;
+    padding: 0.25em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+table, td {
+    border: 3px solid black;
+    background-color: rgb(230, 230, 230);
+    border-collapse: collapse;
+    empty-cells: show;
+    text-align: center;
+}
+
+table {
+    margin-left:auto;
+    margin-top: 8em;
+    margin-right:auto;
+}
+
+footer {
+    background: #2875d4;
+    color: white;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
