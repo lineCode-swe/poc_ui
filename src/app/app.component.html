@@ -27,24 +27,21 @@
 
   <div id="map">
     <table id="tabella">
-      <colgroup>
-        <col span="20" width="50px">
-      </colgroup>
-      <tr height="50px">
+      <tr>
         <span *ngFor="let cell of cells">
           <td *ngIf="cell.y === 0">
             {{cell.x}}
           </td>
         </span>
       </tr>
-      <tr height="50px">
+      <tr>
         <span *ngFor="let cell of cells">
           <td *ngIf="cell.y === 1">
             {{cell.x}}
           </td>
         </span>
       </tr>
-      <tr height="50px">
+      <tr>
         <span *ngFor="let cell of cells">
           <td *ngIf="cell.y === 2">
             {{cell.x}}

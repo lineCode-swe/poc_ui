@@ -131,6 +131,11 @@ table {
     margin-right:auto;
 }
 
+table td {
+    height: 50px;
+    width: 50px;
+}
+
 footer {
     background: #2875d4;
     color: white;
