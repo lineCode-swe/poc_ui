@@ -8,7 +8,7 @@ import { RestService } from './rest.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'JSONServerAPI';
+  title = 'POC lineCode';
 
   constructor(private rs : RestService) {}
 

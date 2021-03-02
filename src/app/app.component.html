@@ -5,13 +5,6 @@
 
 <div id="sidebar">
 
-  <p>Azioni:</p>
-  <ul id="bottoni">
-    <li><button>Start</button></li>
-    <li><button>Stop</button></li>
-    <li><button>Reset</button></li>
-  </ul> 
-
   <div id="legenda">
     <p>Legenda:</p>
     <ul>
@@ -25,29 +18,35 @@
 
 <div id="content">
 
-  <div id="map">
-    <table id="tabella">
-      <colgroup>
-        <col span="20" width="50px">
-      </colgroup>
-      <tr height="50px">
+  <div>
+    <table>
+      <tr>
         <span *ngFor="let cell of cells">
           <td *ngIf="cell.y === 0">
-            {{cell.x}}
+            <span style="visibility: hidden;">{{cell.x}}</span>
+            <span *ngIf="cell.obstacle" class="ostacolo">O</span>
+            <span *ngIf="cell.unit" class="unità">U</span>
+            <span *ngIf="cell.poi" class="poi">P</span>
           </td>
         </span>
       </tr>
-      <tr height="50px">
+      <tr >
         <span *ngFor="let cell of cells">
-          <td *ngIf="cell.y === 1">
-            {{cell.x}}
+          <td *ngIf="cell.y === 1 ">
+            <span style="visibility: hidden;">{{cell.x}}</span>
+            <span *ngIf="cell.obstacle" class="ostacolo">O</span>
+            <span *ngIf="cell.unit" class="unità">U</span>
+            <span *ngIf="cell.poi" class="poi">P</span>
           </td>
         </span>
       </tr>
-      <tr height="50px">
+      <tr>
         <span *ngFor="let cell of cells">
           <td *ngIf="cell.y === 2">
-            {{cell.x}}
+            <span style="visibility: hidden;">{{cell.x}}</span>
+            <span *ngIf="cell.obstacle" class="ostacolo">O</span>
+            <span *ngIf="cell.unit" class="unità">U</span>
+            <span *ngIf="cell.poi" class="poi">P</span>
           </td>
         </span>
       </tr>

@@ -244,7 +244,7 @@
             "x": 10,
             "y": 1,
             "locked": false,
-            "obstacle": true,
+            "obstacle": false,
             "unit": false,
             "poi": false
         },
@@ -480,5 +480,5 @@
             "unit": false,
             "poi": true
         }
-    ]    
+    ]        
 }
