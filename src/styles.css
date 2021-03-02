@@ -26,16 +26,16 @@ header h1 {
 }
 
 #content {
-    width: 80%;
+    width: 83%;
     float: right;
     margin: 0 auto;
     text-align: center;
 }
 
 #sidebar {
-    width: 15%;
+    width: 14%;
     float: left;
-    margin-top: 2em;
+    margin-top: 8em;
     margin-left: 1.5em;
     text-align: center;
 }
@@ -51,45 +51,6 @@ header h1 {
     margin: 0;
     padding: 0;
     margin-bottom: 3em;
-}
-
-/* #bottoni button {
-    width: 15em;
-    height: 2.5em;
-    margin: 0.5em;
-    border-radius: 3px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    cursor: pointer;
-    background-color: lightgray;
-} */
-
-#bottoni button {
-    width: 15em;
-    height: 2.5em;
-    margin: 0.5em;
-    border: 2px solid #2875d4;
-    border-radius: 3px;
-    color: #2875d4;
-    background-color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    cursor: pointer;
-    font-weight: 900;
-}
-
-#bottoni button:hover:enabled{
-    background: #2875d4;
-    color: white;
-}
-/* 44b7ff */
-#bottoni button:active:enabled{
-    background: #5faaf0;
-    color: white;
-}
-
-#bottoni button:disabled {
-    
 }
 
 #legenda li {
@@ -117,18 +78,38 @@ header h1 {
     padding-right: 0.5em;
 }
 
+table {
+    margin-left:auto;
+    margin-top: 8em;
+    margin-right:auto;
+}
+
 table, td {
     border: 3px solid black;
     background-color: rgb(230, 230, 230);
     border-collapse: collapse;
     empty-cells: show;
     text-align: center;
+    font-size: 25px;
+    font-weight: 800;
 }
 
-table {
-    margin-left:auto;
-    margin-top: 8em;
-    margin-right:auto;
+table td {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+}
+
+.unità {
+    background-color: lightgreen;
+}
+
+.ostacolo {
+    background-color: lightcoral;
+}
+
+.poi {
+    background-color: lightblue;
 }
 
 table td {
