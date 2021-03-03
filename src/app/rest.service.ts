@@ -10,9 +10,13 @@ export class RestService {
 
   constructor(private http : HttpClient) { }
 
-  url : string = "http://localhost:3000/cells/";
+  // Per testing in locale tramite db.json usare: http://localhost:3000/cells/
+  // Per collegarsi al server dell'applicazione usare: http://localhost:8080/myapp/grid
+
+  url : string = "http://localhost:8080/myapp/grid";
 
   getCells() {
+    console.log(this.http.get<Cells[]>(this.url));
     return this.http.get<Cells[]>(this.url);
   }
 }

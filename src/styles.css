@@ -26,14 +26,14 @@ header h1 {
 }
 
 #content {
-    width: 83%;
+    width: 86%;
     float: right;
     margin: 0 auto;
     text-align: center;
 }
 
 #sidebar {
-    width: 14%;
+    width: 12%;
     float: left;
     margin-top: 8em;
     margin-left: 1.5em;
@@ -86,7 +86,7 @@ table {
 
 table, td {
     border: 3px solid black;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(241, 241, 241);
     border-collapse: collapse;
     empty-cells: show;
     text-align: center;
@@ -95,21 +95,24 @@ table, td {
 }
 
 table td {
-    height: 50px;
-    width: 50px;
+    height: 55px;
+    width: 55px;
     text-align: center;
 }
 
 .unità {
     background-color: lightgreen;
+    margin-left: -0.5em;
 }
 
 .ostacolo {
     background-color: lightcoral;
+    margin-left: -0.5em;
 }
 
 .poi {
     background-color: lightblue;
+    margin-left: -0.5em;
 }
 
 footer {
