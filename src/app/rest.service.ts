@@ -10,7 +10,7 @@ export class RestService {
 
   constructor(private http : HttpClient) { }
 
-  url : string = "http://localhost:3000/cells/";
+  url : string = 'http://localhost:8080/myapp/grid';
 
   getCells() {
     return this.http.get<Cells[]>(this.url);
