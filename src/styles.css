@@ -35,7 +35,7 @@ header h1 {
 #sidebar {
     width: 12%;
     float: left;
-    margin-top: 8em;
+    margin-top: 2em;
     margin-left: 1.5em;
     text-align: center;
 }
@@ -80,7 +80,7 @@ header h1 {
 
 table {
     margin-left:auto;
-    margin-top: 8em;
+    margin-top: 2em;
     margin-right:auto;
 }
 

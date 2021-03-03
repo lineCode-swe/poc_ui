@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Cells } from './Cells';
-import { RestService } from './rest.service';
 
 @Component({
   selector: 'app-root',
@@ -10,15 +8,7 @@ import { RestService } from './rest.service';
 export class AppComponent implements OnInit {
   title = 'POC lineCode';
 
-  constructor(private rs : RestService) {}
+  constructor() {}
 
-  cells : Cells[] = [];
-
-  ngOnInit(): void {
-    this.rs.getCells().subscribe
-    (
-      (response) => {this.cells = response}
-    ),
-    (error) => {console.log("Error Occured: " + error)}
-  }
+  ngOnInit(): void {}
 }
