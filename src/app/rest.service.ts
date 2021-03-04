@@ -1,21 +1,20 @@
 import { Injectable } from '@angular/core';
-
 import { HttpClient } from '@angular/common/http';
-import { Cells } from './Cells';
+import { Observable, timer } from 'rxjs';
+import { switchMap } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
 export class RestService {
 
-  constructor(private http : HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-  // Per testing in locale tramite db.json usare: http://localhost:3000/cells/
-  // Per collegarsi al server dell'applicazione usare: http://localhost:8080/myapp/grid
+  url = 'http://0.0.0.0:8080/myapp/grid';
 
-  url : string = "http://0.0.0.0:8080/myapp/grid";
-
-  getCells() {
-    return this.http.get<Cells[]>(this.url);
+  getCells(): Observable<any> {
+    return timer(0, 1000).pipe(
+      switchMap(() =>
+        this.http.get<{'x': number, 'y': number, 'locked': boolean, 'obstacle': boolean, 'unit': boolean, 'poi': boolean}[]>(this.url)));
   }
 }
