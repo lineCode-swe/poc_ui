@@ -1,0 +1,78 @@
+header {
+  background: #2875d4;
+  padding: 0.1em 0;
+  width: 100%;
+  overflow: auto;
+}
+
+header h1 {
+  color: white;
+  text-align: center;
+  padding: 0px 1em;
+  text-decoration: none;
+  font-size: 2em;
+  line-height: 35px;
+}
+
+footer {
+  background: #2875d4;
+  color: white;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#content {
+  width: 86%;
+  float: right;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#sidebar {
+  width: 12%;
+  float: left;
+  margin-top: 8em;
+  margin-left: 1.5em;
+  text-align: center;
+}
+
+#sidebar p {
+  margin-bottom: 1em;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+#sidebar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 3em;
+}
+
+#legenda li {
+  margin: 1em;
+}
+
+#legUnità {
+  background-color: lightgreen;
+  padding: 0.25em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+#legOstacolo {
+  background-color: lightcoral;
+  padding: 0.25em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+#legPOI {
+  background-color: lightblue;
+  padding: 0.25em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
