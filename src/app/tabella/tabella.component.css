@@ -1,6 +1,6 @@
 table {
   margin-left:auto;
-  margin-top: 8em;
+  margin-top: 2em;
   margin-right:auto;
 }
 
@@ -33,9 +33,4 @@ table td {
 .poi {
   background-color: lightblue;
   margin-left: -0.5em;
-}
-
-table td {
-  height: 50px;
-  width: 50px;
 }

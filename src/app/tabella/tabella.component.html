@@ -34,7 +34,9 @@
           <td *ngIf="cell.y === 2">
             <span style="visibility: hidden;">{{cell.x}}</span>
             <span *ngIf="cell.obstacle" class="ostacolo">O</span>
-            <span *ngIf="cell.unit" class="unità">U</span>
+            <span *ngIf="cell.unit" class="unità">
+              <span *ngIf="cell.poi === false" class="poi">U</span>
+            </span>
             <span *ngIf="cell.poi">
               <span *ngIf="cell.unit" style="font-size: 18px; margin-left: -1em;">
                 <span style="background-color: lightgreen;">U</span>+<span style="background-color: lightblue;">P</span>

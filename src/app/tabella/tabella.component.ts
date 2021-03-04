@@ -8,12 +8,9 @@ import { RestService } from '../rest.service';
 })
 export class TabellaComponent implements OnInit {
 
-  constructor(
-    private rs: RestService
-  ) { }
+  constructor(private rs: RestService) { }
 
   cells = this.rs.getCells();
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 }
