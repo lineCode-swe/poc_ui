@@ -10,7 +10,7 @@ export class RestService {
 
   constructor(private http: HttpClient) { }
 
-  url = 'http://0.0.0.0:8080/myapp/grid';
+  url = 'http://localhost:8080/myapp/grid';
 
   getCells(): Observable<any> {
     return timer(0, 1000).pipe(
