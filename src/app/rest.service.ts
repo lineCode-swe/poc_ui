@@ -9,7 +9,7 @@ import { switchMap } from 'rxjs/operators';
 export class RestService {
 
   constructor(private http: HttpClient) { }
-  // http://localhost:8080/myapp/grid oppure http://0.0.0.0:8080/myapp/grid
+  
   url = 'http://localhost:8080/myapp/grid';
 
   getCells(): Observable<any> {
