@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TabellaComponent } from './tabella/tabella.component';
+import { WsService } from "./ws.service";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { TabellaComponent } from './tabella/tabella.component';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [WsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

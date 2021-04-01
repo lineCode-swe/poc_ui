@@ -1,4 +1,4 @@
-export class Cells
+export class Cell
 {
    "x": number;
    "y": number;

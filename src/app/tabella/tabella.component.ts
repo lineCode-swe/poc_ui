@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RestService } from '../rest.service';
+import { WsService } from '../ws.service';
 
 @Component({
   selector: 'app-tabella',
@@ -8,7 +8,7 @@ import { RestService } from '../rest.service';
 })
 export class TabellaComponent implements OnInit {
 
-  constructor(private rs: RestService) { }
+  constructor(private rs: WsService) { }
 
   cells = this.rs.getCells();
 
